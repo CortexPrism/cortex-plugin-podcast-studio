@@ -1,0 +1,39 @@
+{
+  "name": "cortex-plugin-podcast-studio",
+  "version": "1.0.0",
+  "description": "Podcast Production Suite — Script writing, audio processing, show notes, social clips, publishing to platforms",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-podcast-studio",
+  "homepage": "https://cortexprism.io/marketplace/plugins/podcast-studio",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "podcast_write_script",
+      "description": "Write episode script from topic",
+      "params": []
+    },
+    {
+      "name": "podcast_process_audio",
+      "description": "Noise reduction and audio enhancement",
+      "params": []
+    },
+    {
+      "name": "podcast_generate_notes",
+      "description": "Generate show notes with timestamps",
+      "params": []
+    },
+    { "name": "podcast_extract_clips", "description": "Extract social media clips", "params": [] },
+    {
+      "name": "podcast_publish",
+      "description": "Publish to Anchor/Transistor/Buzzsprout",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
